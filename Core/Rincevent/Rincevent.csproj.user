@@ -1,0 +1,17 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>ftp://meow.fr/subdomains/rincevent/download/|ftp://meow.fr/subdomains/v2010/software/rincevent/|ftp://meow.fr/www/software/rincevent/|ftp://www/software/rincevent/|ftp://rincevent.fr/httpdocs/install/</PublishUrlHistory>
+    <InstallUrlHistory>http://www.rincevent.com/download/|http://www.meow.fr/software/rincevent/|http://www.rincevent.fr/install/</InstallUrlHistory>
+    <SupportUrlHistory>http://www.meow.fr</SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddContent" xml:space="preserve">
+    <value>Insérer ces données ?</value>
+  </data>
+  <data name="ContinueOrNot" xml:space="preserve">
+    <value>Ignorer cette erreur et continuer ?</value>
+  </data>
+  <data name="CriticalErrorAndContactMe" xml:space="preserve">
+    <value>Une erreur critique est survenue. Contactez TigrouMeow via http://www.meow.fr ! Merci.</value>
+  </data>
+  <data name="CSV_Description" xml:space="preserve">
+    <value>Module d'import CSV.</value>
+  </data>
+  <data name="CSV_Name" xml:space="preserve">
+    <value>Fichier CSV</value>
+  </data>
+  <data name="FileHasModifications" xml:space="preserve">
+    <value>Il y a eu des modifications sur le fichier actuel. Souhaitez-vous les enregistrer ?</value>
+  </data>
+  <data name="FirstStartMessage" xml:space="preserve">
+    <value>Bienvenue dans Rincevent :o) Pour démarrer, le mieux c'est de lire le tutoriel. Il est accessible via le menu 'Aide' -&gt; 'Tutorial' ! Bon apprentissage :o)</value>
+  </data>
+  <data name="FrmErrorBadCharacters" xml:space="preserve">
+    <value>Seul les caractères sont acceptés.</value>
+  </data>
+  <data name="FrmErrorEmpty" xml:space="preserve">
+    <value>Un nom doit être spécifié (qui n'existe pas déjà).</value>
+  </data>
+  <data name="FrmSettingsErrorSameOrder" xml:space="preserve">
+    <value>Il y a des colonnes avec la même valeur pour l'ordre </value>
+  </data>
+  <data name="InvalidNumber" xml:space="preserve">
+    <value>Le nombre rentré est invalide. Mais est-ce vraiment un nombre ?</value>
+  </data>
+  <data name="MainFormLoadError" xml:space="preserve">
+    <value>Le fichier est corrompu ou n'est pas au format de Rincevent.</value>
+  </data>
+  <data name="MainFormModuleError" xml:space="preserve">
+    <value>Il y a eu une erreur lors de l'utilisation du module.</value>
+  </data>
+  <data name="MnuCheckAll" xml:space="preserve">
+    <value>&amp;Tout cocher</value>
+  </data>
+  <data name="MnuDelete" xml:space="preserve">
+    <value>&amp;Supprimer</value>
+  </data>
+  <data name="MnuModify" xml:space="preserve">
+    <value>&amp;Modifier</value>
+  </data>
+  <data name="MnuRandomCheckUncheck" xml:space="preserve">
+    <value>Cocher / décocher aléatoire</value>
+  </data>
+  <data name="MnuRename" xml:space="preserve">
+    <value>&amp;Renommer</value>
+  </data>
+  <data name="MnuSortUnsort" xml:space="preserve">
+    <value>&amp;Trier / Annuler</value>
+  </data>
+  <data name="MnuUncheckAll" xml:space="preserve">
+    <value>Tout &amp;décocher</value>
+  </data>
+  <data name="NoCheckedItemsToPlay" xml:space="preserve">
+    <value>Il n'y a aucun élément coché dans la liste. Vous pouvez soit cocher des éléments, ou alors spécifier dans les paramètres que vous souhaitez aussi afficher les éléments non cochés.</value>
+  </data>
+  <data name="NoItemsToPlay" xml:space="preserve">
+    <value>Il n'y a aucun élément à afficher. Rajoutez du contenu ! :)</value>
+  </data>
+  <data name="NoUncheckedItemsToPlay" xml:space="preserve">
+    <value>Il n'y a aucun élément non-coché dans la liste. Vous pouvez soit décocher des éléments, ou alors spécifier dans les paramètres que vous souhaitez aussi afficher les éléments cochés.</value>
+  </data>
+  <data name="OneOutputModuleIsNeeded" xml:space="preserve">
+    <value>Un module d'affichage est nécessaire pour utiliser le mode lecture.</value>
+  </data>
+  <data name="RenameColumn" xml:space="preserve">
+    <value>Renommer la colonne</value>
+  </data>
+  <data name="RestartNeeded" xml:space="preserve">
+    <value>Rincevent doit être redémarré pour prendre en compte les nouveaux paramètres.</value>
+  </data>
+  <data name="TutorialUrl" xml:space="preserve">
+    <value>http://rincevent.codeplex.com/Wiki/View.aspx?title=Tutoriel</value>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="TxtCheckThisElement" xml:space="preserve">
+    <value>Cocher cet élément ?</value>
+  </data>
+  <data name="TxtUncheckThisElement" xml:space="preserve">
+    <value>Décocher cet élément ?</value>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Réponse</value>
+  </data>
+  <data name="Attempt" xml:space="preserve">
+    <value>Essai</value>
+  </data>
+  <data name="CorrectAnswer" xml:space="preserve">
+    <value>Réponse correcte</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Module d'examen et d'apprentissage forcé.</value>
+  </data>
+  <data name="Quizz_Name" xml:space="preserve">
+    <value>Quizz</value>
+  </data>
+  <data name="Quizz_Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="WrongAnswerMsg" xml:space="preserve">
+    <value>Faux ! La bonne réponse est</value>
+  </data>
+</root>

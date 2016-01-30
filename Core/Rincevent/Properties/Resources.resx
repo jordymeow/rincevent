@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddContent" xml:space="preserve">
+    <value>Should I add this content ?</value>
+  </data>
+  <data name="FileHasModifications" xml:space="preserve">
+    <value>The current file has modifications. Would you like to save them ?</value>
+  </data>
+  <data name="MainFormModuleError" xml:space="preserve">
+    <value>An error happened in the module. Its execution has been cancelled.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TrayPause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrayPause.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoCheckedItemsToPlay" xml:space="preserve">
+    <value>There are no checked items to play. You can either check items or change the parameters to play the unchecked items too.</value>
+  </data>
+  <data name="NextVersion" xml:space="preserve">
+    <value>This will be enabled on a future release of Rincevent ! Sorry :(</value>
+  </data>
+  <data name="MnuUncheckAll" xml:space="preserve">
+    <value>&amp;Uncheck All</value>
+  </data>
+  <data name="OneOutputModuleIsNeeded" xml:space="preserve">
+    <value>One output module is needed at least to play the content.</value>
+  </data>
+  <data name="MainFormLoadError" xml:space="preserve">
+    <value>The file is either corrupted or not a Rincevent file.</value>
+  </data>
+  <data name="CriticalErrorAndContactMe" xml:space="preserve">
+    <value>A critical error occured. Please contact TigrouMeow on http://www.meow.fr ! Thank you.</value>
+  </data>
+  <data name="RestartNeeded" xml:space="preserve">
+    <value>Rincevent must be restarted to use the new settings.</value>
+  </data>
+  <data name="MnuRename" xml:space="preserve">
+    <value>&amp;Rename</value>
+  </data>
+  <data name="NoUncheckedItemsToPlay" xml:space="preserve">
+    <value>There are no unchecked items to play. You can either uncheck items or change the parameters to play the checked items too.</value>
+  </data>
+  <data name="TrayStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrayStop.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MnuCheckAll" xml:space="preserve">
+    <value>&amp;Check All</value>
+  </data>
+  <data name="FirstStartMessage" xml:space="preserve">
+    <value>Welcome in Rincevent :o) You should really start by reading the tutorial. You can access it by 'Help' -&gt; 'Tutorial' ! Happy learning !</value>
+  </data>
+  <data name="MnuModify" xml:space="preserve">
+    <value>&amp;Modify</value>
+  </data>
+  <data name="MnuDelete" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="InvalidNumber" xml:space="preserve">
+    <value>The number you typed in invalid. But is it a number?</value>
+  </data>
+  <data name="FrmSettingsErrorSameOrder" xml:space="preserve">
+    <value>There are columns with the same 'order' value </value>
+  </data>
+  <data name="NoItemsToPlay" xml:space="preserve">
+    <value>There are no items to play. Add items to your list !</value>
+  </data>
+  <data name="RenameColumn" xml:space="preserve">
+    <value>Rename this column</value>
+  </data>
+  <data name="RinceventUrl" xml:space="preserve">
+    <value>http://rincevent.codeplex.com/</value>
+  </data>
+  <data name="FrmErrorBadCharacters" xml:space="preserve">
+    <value>Only characters are accepted.</value>
+  </data>
+  <data name="FrmErrorEmpty" xml:space="preserve">
+    <value>A name is needed (that doesn't exist already).</value>
+  </data>
+  <data name="TutorialUrl" xml:space="preserve">
+    <value>http://rincevent.codeplex.com/Wiki/View.aspx?title=Tutorial</value>
+  </data>
+  <data name="MnuSortUnsort" xml:space="preserve">
+    <value>&amp;Sort / Unsort</value>
+  </data>
+  <data name="TrayPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrayPlay.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MnuRandomCheckUncheck" xml:space="preserve">
+    <value>&amp;Random check / uncheck</value>
+  </data>
+  <data name="ContinueOrNot" xml:space="preserve">
+    <value>Ignore this error and continue?</value>
+  </data>
+  <data name="CSV_Description" xml:space="preserve">
+    <value>CSV import module.</value>
+  </data>
+  <data name="CSV_Name" xml:space="preserve">
+    <value>CSV file</value>
+  </data>
+  <data name="MiniWindow_Description" xml:space="preserve">
+    <value>Pops the data in a small-sizable window with a customized timer.</value>
+  </data>
+  <data name="MiniWindow_Name" xml:space="preserve">
+    <value>MiniWindow</value>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="TxtCheckThisElement" xml:space="preserve">
+    <value>Check this element ?</value>
+  </data>
+  <data name="TxtUncheckThisElement" xml:space="preserve">
+    <value>Uncheck this element ?</value>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="Attempt" xml:space="preserve">
+    <value>Attempt</value>
+  </data>
+  <data name="CorrectAnswer" xml:space="preserve">
+    <value>Correct answer</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="Quizz_Description" xml:space="preserve">
+    <value>Exam and brute-learning module.</value>
+  </data>
+  <data name="Quizz_Name" xml:space="preserve">
+    <value>Quizz</value>
+  </data>
+  <data name="WrongAnswerMsg" xml:space="preserve">
+    <value>Wrong ! The right answer was</value>
+  </data>
+  <data name="SmartFM_Description" xml:space="preserve">
+    <value>Smart.fm list import module.</value>
+  </data>
+  <data name="SmartFM_Name" xml:space="preserve">
+    <value>Smart.fm list</value>
+  </data>
+  <data name="Accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Accept.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArrowRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArrowRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnPicture.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnPictureXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnPictureXP.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnRemove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnsAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnsAccept.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnSound.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnSoundXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnSoundXP.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnText" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnText.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnTextXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColumnTextXP.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommentEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CommentEdit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GlobCn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GlobCn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GlobFr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GlobFr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GlobUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GlobUs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="html_valid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\html_valid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiniRincevent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiniRincevent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoPhoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoPhoto.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rincevent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rincevent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Smartfm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smartfm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spinner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spinner.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsCsv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsCsv.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsDelete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsDeleteItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsDeleteItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsExit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsFont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsFont.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsGo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsGo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsHelp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsHtml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsHtml.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsInfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsiPod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsiPod.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsLightbulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsLightbulb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsMic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsMic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsModule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsModule.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsOpen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPause.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylistAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylistAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylistAddChecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylistAddChecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylistChecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylistChecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylistEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylistEdit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylistRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylistRemove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylistRemoveChecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylistRemoveChecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylists" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylists.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPlaylistUnchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPlaylistUnchecked.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsPrint.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsProperties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsProperties.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsQuizz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsQuizz.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsRecord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsRecord.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsRemove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsRename" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsRename.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsSave.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsSettings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsShape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsSort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsSort.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vsStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vsStar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsStop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsTimer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsTimer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VsWorldGo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VsWorldGo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

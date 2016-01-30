@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B02562EA-7450-491B-BA3A-8B7F9D3C4FC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Meow.FR.Rincevent.Core.Gui</RootNamespace>
+    <AssemblyName>Rincevent</AssemblyName>
+    <StartupObject>Meow.FR.Rincevent.Core.Gui.Program</StartupObject>
+    <ApplicationIcon>Resources\Rincevent.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Rincevent.snk</AssemblyOriginatorKeyFile>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>F0DDBCFF5EA18826E5B7D782C9B7059362E4C8B5</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Rincevent_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <DelaySign>false</DelaySign>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>ftp://rincevent.meow.fr/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://rincevent.meow.fr/</InstallUrl>
+    <SupportUrl>http://www.meow.fr</SupportUrl>
+    <ProductName>Rincevent</ProductName>
+    <PublisherName>Meow.fr</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WPF.Themes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\WPF.Themes.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Columns\ColumnAbstract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Columns\ColumnFirstText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Columns\ColumnImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Columns\ColumnImage.Designer.cs">
+      <DependentUpon>ColumnImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Columns\ColumnText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Columns\ColumnText.Designer.cs">
+      <DependentUpon>ColumnText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Columns\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Columns\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Content\Content.cs" />
+    <Compile Include="Data\Content\ContentElement.cs" />
+    <Compile Include="Data\Content\ContentManager.cs" />
+    <Compile Include="Data\Content\ContentManager_Import.cs" />
+    <Compile Include="Data\Content\ContentType.cs" />
+    <Compile Include="Data\Content\RandomMode.cs" />
+    <Compile Include="Data\Extensibility\BaseModule.cs" />
+    <Compile Include="Data\Extensibility\DisplayModule.cs" />
+    <Compile Include="Data\Extensibility\DisplayModuleSettings.cs" />
+    <Compile Include="Data\Extensibility\ICore.cs" />
+    <Compile Include="Data\Extensibility\IOModule.cs" />
+    <Compile Include="Data\Extensibility\IOModuleType.cs" />
+    <Compile Include="Data\Manager\FileManager.cs" />
+    <Compile Include="Data\Settings\BaseSettings.cs" />
+    <Compile Include="Data\Settings\BaseSettings.Designer.cs">
+      <DependentUpon>BaseSettings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\Settings\GlobalizedAttributes.cs" />
+    <Compile Include="Data\Settings\GlobalizedDescriptor.cs" />
+    <Compile Include="Data\Settings\ImageSettings.cs" />
+    <Compile Include="Data\Settings\ImageSettings.Designer.cs">
+      <DependentUpon>ImageSettings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\Settings\TextSettings.cs" />
+    <Compile Include="Data\Settings\TextSettings.Designer.cs">
+      <DependentUpon>TextSettings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint.Designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRandomCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRandomCheck.Designer.cs">
+      <DependentUpon>FrmRandomCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlaylist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlaylist.Designer.cs">
+      <DependentUpon>FrmPlaylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOptions.Designer.cs">
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CSV\CsvReader\CachedCsvReader.cs" />
+    <Compile Include="Modules\CSV\CsvReader\CachedCsvReader.CsvBindingList.cs" />
+    <Compile Include="Modules\CSV\CsvReader\CachedCsvReader.CsvPropertyDescriptor.cs" />
+    <Compile Include="Modules\CSV\CsvReader\CachedCsvReader.CsvRecordComparer.cs" />
+    <Compile Include="Modules\CSV\CsvReader\CsvReader.cs" />
+    <Compile Include="Modules\CSV\CsvReader\CsvReader.DataReaderValidations.cs" />
+    <Compile Include="Modules\CSV\CsvReader\CsvReader.RecordEnumerator.cs" />
+    <Compile Include="Modules\CSV\CsvReader\Events\ParseErrorEventArgs.cs" />
+    <Compile Include="Modules\CSV\CsvReader\Exceptions\MalformedCsvException.cs" />
+    <Compile Include="Modules\CSV\CsvReader\Exceptions\MissingFieldCsvException.cs" />
+    <Compile Include="Modules\CSV\CsvReader\MissingFieldAction.cs" />
+    <Compile Include="Modules\CSV\CsvReader\ParseErrorAction.cs" />
+    <Compile Include="Modules\CSV\FrmCsv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CSV\FrmCsv.Designer.cs">
+      <DependentUpon>FrmCsv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CSV\Module.cs" />
+    <Compile Include="Modules\MiniWindow\Configuration\GlobalizedAttributes.cs" />
+    <Compile Include="Modules\MiniWindow\Configuration\ModuleSettings.cs" />
+    <Compile Include="Modules\MiniWindow\Configuration\ModuleSettings.Designer.cs">
+      <DependentUpon>ModuleSettings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Modules\MiniWindow\CtrlValidation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MiniWindow\CtrlValidation.Designer.cs">
+      <DependentUpon>CtrlValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MiniWindow\FrmMiniWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\MiniWindow\FrmMiniWindow.Designer.cs">
+      <DependentUpon>FrmMiniWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MiniWindow\Module.cs" />
+    <Compile Include="Modules\Quizz\Configuration\GlobalizedAttributes.cs" />
+    <Compile Include="Modules\Quizz\Configuration\ModuleSettings.cs" />
+    <Compile Include="Modules\Quizz\Configuration\ModuleSettings.Designer.cs">
+      <DependentUpon>ModuleSettings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmAnswer.Designer.cs">
+      <DependentUpon>FrmAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmQuizz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmQuizz.Designer.cs">
+      <DependentUpon>FrmQuizz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmResult.Designer.cs">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Quizz\FrmStart.Designer.cs">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Quizz\Module.cs" />
+    <Compile Include="Modules\Quizz\QuestionResult.cs" />
+    <Compile Include="Modules\Quizz\QuizzMode.cs" />
+    <Compile Include="Modules\Quizz\QuizzResult.cs" />
+    <Compile Include="Modules\Quizz\WritingRecognition.cs" />
+    <Compile Include="Modules\Smart.fm\Module.cs" />
+    <Compile Include="Modules\Smart.fm\SmartElement.cs" />
+    <Compile Include="Modules\Smart.fm\SmartParser.cs" />
+    <Compile Include="Modules\Smart.fm\WndMain.xaml.cs">
+      <DependentUpon>WndMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ExceptionMessages.Designer.cs">
+      <DependentUpon>ExceptionMessages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\MiniWindowSettings.Designer.cs">
+      <DependentUpon>MiniWindowSettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\QuizzSettings.Designer.cs">
+      <DependentUpon>QuizzSettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTitle.Designer.cs">
+      <DependentUpon>FrmTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Columns\ColumnAbstract.resx">
+      <DependentUpon>ColumnAbstract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\ColumnFirstText.resx">
+      <DependentUpon>ColumnFirstText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\ColumnImage.fr.resx">
+      <DependentUpon>ColumnImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\ColumnImage.resx">
+      <DependentUpon>ColumnImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\ColumnText.resx">
+      <DependentUpon>ColumnText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\RenameForm.fr.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\RenameForm.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Settings\BaseSettings.fr.resx">
+      <DependentUpon>BaseSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Settings\BaseSettings.resx">
+      <DependentUpon>BaseSettings.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BaseSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Settings\ImageSettings.fr.resx">
+      <DependentUpon>ImageSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Settings\ImageSettings.resx">
+      <DependentUpon>ImageSettings.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Settings\TextSettings.fr.resx">
+      <DependentUpon>TextSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Settings\TextSettings.resx">
+      <DependentUpon>TextSettings.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbout.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOptions.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlaylist.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPlaylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlaylist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPlaylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOptions.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlaylist.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPlaylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandomCheck.fr.resx">
+      <DependentUpon>FrmRandomCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandomCheck.resx">
+      <DependentUpon>FrmRandomCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTitle.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CSV\FrmCsv.fr.resx">
+      <DependentUpon>FrmCsv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CSV\FrmCsv.resx">
+      <DependentUpon>FrmCsv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CSV\FrmCsv.zh-CHS.resx">
+      <DependentUpon>FrmCsv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MiniWindow\Configuration\ModuleSettings.fr.resx">
+      <DependentUpon>ModuleSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MiniWindow\Configuration\ModuleSettings.resx">
+      <DependentUpon>ModuleSettings.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ModuleSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MiniWindow\CtrlValidation.fr.resx">
+      <DependentUpon>CtrlValidation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MiniWindow\CtrlValidation.resx">
+      <DependentUpon>CtrlValidation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MiniWindow\FrmMiniWindow.resx">
+      <DependentUpon>FrmMiniWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\Configuration\ModuleSettings.fr.resx">
+      <DependentUpon>ModuleSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\Configuration\ModuleSettings.resx">
+      <DependentUpon>ModuleSettings.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ModuleSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmAnswer.resx">
+      <DependentUpon>FrmAnswer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmQuizz.fr.resx">
+      <DependentUpon>FrmQuizz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmQuizz.resx">
+      <DependentUpon>FrmQuizz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmQuizz.zh-CHS.resx">
+      <DependentUpon>FrmQuizz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmResult.fr.resx">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmResult.resx">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmResult.zh-CHS.resx">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmStart.fr.resx">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmStart.resx">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Quizz\FrmStart.zh-CHS.resx">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ExceptionMessages.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ExceptionMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExceptionMessages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTitle.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTitle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-CHS.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Smart.fm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Smart.fm.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.zh-CHS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.zh-CHS.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Smart.fm.Designer.cs">
+      <DependentUpon>Smart.fm.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="UserActivityHook.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnPicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnSound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnPictureXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnSoundXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnTextXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColumnsAccept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsProperties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPrint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsRecord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsMic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsFont.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rincevent.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrayPlay.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrayStop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrayPause.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobUs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Resources\GlobFr.png" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsTimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsShape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsSort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsRename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsDeleteItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rincevent.png" />
+    <None Include="Rincevent.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylistAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylistRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylistChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylistUnchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsModule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylistEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylistAddChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsPlaylistRemoveChecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vsStar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsGo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsWorldGo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\CSV\CsvReader\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobCn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsHtml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsCsv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsiPod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Modules\Quizz\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommentEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Modules\MiniWindow\App.config" />
+    <None Include="Properties\MiniWindowSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MiniWindowSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\QuizzSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>QuizzSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\VsLightbulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spinner.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projection-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smartfm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smartfm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Modules\Smart.fm\WndMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my-computer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NoPhoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\html_valid.png" />
+    <None Include="RinceventKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".mwr">
+      <Visible>False</Visible>
+      <Description>Rincevent</Description>
+      <Progid>Rincevent</Progid>
+      <DefaultIcon>Resources\Rincevent.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniRincevent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Ink">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VsQuizz.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
