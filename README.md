@@ -1,6 +1,9 @@
 # Rincevent
 Rincevent is a software that allows you to learn in a non-monotonous manner, all day long, wherever you are. Learn vocabulary, a foreign language, mathematical formulas, the names of monuments (with images), musical notes (with sound). You can learn all the day long with a small pop-up window that regularly appears on your screen, and later, to learn more intensively in multiple choice mode.
 
+# Installation
+You can compile the project with Visual Studio but if you simply want to use it, download the file called Rincevent 1.43.msi and run it. That will install it automatically.
+
 # Vocabulary
 It is easy to create lists, import new words from CSV files, but you can also use the lists I have already made. They are available in the Vocabulary directory and they mainly target Japanese, Chinese and English. There is also a list for guitar chords.
 
